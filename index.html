@@ -52,8 +52,7 @@
             >Demo</a
           > -->
         <a href="https://trypennant.com/@trypennant/7c776af1-ebfe-4559-9a5d-b785e5070dab" target="_blank">Docs</a>
-        <a href="https://github.com/orgs/PennantHQ/repositories" target="_blank" class="icon"><i
-            class="fab fa-github"></i></a>
+        <a href="https://github.com/PennantHQ" target="_blank" class="icon"><i class="fab fa-github"></i></a>
       </nav>
       <div id="menu">
         <button type="button">
@@ -1196,6 +1195,12 @@
           the client side, which could impact performance on less powerful devices.
         </p>
 
+        <p>
+        <figure style="text-align: center;">
+          <img src="images/centralized-decentralized-table.png" />
+          <figcaption>Comparison Table: Centralized vs. Decentralized Systems</figcaption>
+
+        </figure>
         <h3 id="section-3-4">3.4. Yjs: The Chosen CRDT</h3>
         <p>
           Our search led us to Yjs, a CRDT implementation designed for collaborative
@@ -1327,17 +1332,24 @@
           editor bindings act as interpreters, transforming user actions—like
           keystrokes or cursor movements—into structured transactions within our
           shared data model.
-          <img border="0" width="162" height="182" src="images/37-notebook-cell.png" />
         </p>
-        <p>
-          Yjs creates a link between a broad spectrum of text editors, such as Monaco,
-          CodeMirror, Quill, or Prosemirror, and its own data model through an
-          intermediate binding layer. This binding allows for a seamless conversion
-          between the data model of the editor and that of Yjs, with each client
-          maintaining an independent copy of the Yjs data structure. This design not
-          only facilitates Yjs in adeptly resolving potential conflicts but also
-          guarantees that data remains consistent across all participating users.
-        </p>
+        <div style="width: 100%; overflow: hidden;">
+          <div style="width: 70%; float: left;">
+            <p style="text-align: justify;">
+              Yjs creates a link between a broad spectrum of text editors, such as Monaco,
+              CodeMirror, Quill, or Prosemirror, and its own data model through an
+              intermediate binding layer. This binding allows for a seamless conversion
+              between the data model of the editor and that of Yjs, with each client
+              maintaining an independent copy of the Yjs data structure. This design not
+              only facilitates Yjs in adeptly resolving potential conflicts but also
+              guarantees that data remains consistent across all participating users.
+            </p>
+          </div>
+          <div style="width: 23%; float: right; margin-left: 10px;">
+            <img width="100%" height="300" src="images/37-notebook-cell.png" />
+          </div>
+        </div>
+
         <p>
           While this ensures that the Yjs document remains in sync with our editors,
           we still had to create a unified view by synchronizing the shared model
@@ -1372,7 +1384,7 @@
         </p>
         <p>
           <br />
-          <img border="0" width="468" height="158" src="images/38-frontend-backend-providers.png" />
+          <img src="images/38-frontend-backend-providers.png" />
         </p>
         <p>
           <strong><em>Our system leveraged WebSockets as a communication protocol</em></strong>,
@@ -1390,7 +1402,7 @@
           per cell, with each editor bound to a unique Yjs Document (Y.Doc). Here’s a
           diagram illustrating this:
         </p>
-        <p><img border="0" width="406" height="188" src="images/381-ydoc-per-editor.png" /></p>
+        <p><img src="images/381-ydoc-per-editor.png" /></p>
         <p>
           In this design, each editor requires its own connection, which can consume
           more resources and complicate synchronization between different parts of the
@@ -1410,7 +1422,7 @@
         </p>
         <p>
           The resulting shared model structure looks more like this now:
-          <img border="0" width="397" height="255" src="images/381-nested-yjs.png" />
+          <img src="images/381-nested-yjs.png" />
         </p>
         <p>
           Now, each notebook has a single Yjs Document (Y.Doc) and each cell is a
@@ -1447,7 +1459,7 @@
           collaboration.
         </p>
         <p>
-          <img border="0" width="600" height="376" src="images/382-connecting-to-rooms.png" />
+          <img src="images/382-connecting-to-rooms.png" />
         </p>
         <p>
           This mechanism provides us with the flexibility to manage groups of collaborators working on different
