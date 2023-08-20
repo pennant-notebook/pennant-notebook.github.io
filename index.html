@@ -666,7 +666,7 @@
           started
           quickly and providing secure server-side code execution. And importantly, Pennant supports seamless real-time
           collaboration as students and professionals become increasingly remote.</p>
-        <p><img width="380" height="268" src="images/11-opening-notebook-gif.gif" /></p>
+        <p><img src="images/11-opening-notebook-gif.gif" /></p>
         <p>
           <strong><em>This white paper will generally explore the technical challenges of computational notebooks, such
               as code
@@ -684,7 +684,7 @@
           code, <strong><em>and users can receive immediate feedback on how changing their code influences the
               output.</em></strong>
         </p>
-        <p><img width="468" height="226" src="images/111-computational-notebook.gif" /></p>
+        <p><img src="images/111-computational-notebook.gif" /></p>
         <p>Computational notebooks facilitate the creation of detailed notes through cells with markdown functionality.
           Markdown
           cells render text, images, and other elements to deliver rich and visually engaging documentation notes.
@@ -722,7 +722,7 @@
           vanilla Javascript, students can
           use the
           same language conventions they would anywhere else.</p>
-        <p><img border="0" width="468" height="226" src="images/112-vanilla-javascript-gif.gif" /></p>
+        <p><img src="images/112-vanilla-javascript-gif.gif" /></p>
         <p><strong><em>Pennant notebooks allow seamless, real-time collaboration for up to 5 users per
               notebook</em></strong>.
         </p>
@@ -734,7 +734,7 @@
               to code execution without any technical setup requirements</em></strong> (e.g., VS Code Live Share) or
           additional
           tools (like Coderpad).</p>
-        <p><img border="0" width="265" height="186" src="images/112-tryout-pennant-gif.gif" /></p>
+        <p><img src="images/112-tryout-pennant-gif.gif" /></p>
         <p><strong><em>You can try out Pennant <a href="https://www.trypennant.com">here</a>.</em></strong></p>
 
         <!-- Section 2 -->
@@ -783,7 +783,7 @@
           back to the central store, they might inadvertently overwrite another user's recently saved changes. This is
           visually
           depicted below, where the left user's save action erases the updates made by the user on the right.</p>
-        <p><img border="0" width="468" height="263" src="images/212-overwrites.gif" />
+        <p><img src="images/212-overwrites.gif" />
         </p>
         <p>To mitigate such overwrite issues, many systems employed a "lockout" mechanism. In this approach, once User A
           accesses a document, the central store locks it, ensuring its consistency. Any subsequent access requests, say
@@ -793,7 +793,7 @@
           in storage, it significantly hamstrings real-time collaboration, as multiple users can't simultaneously edit
           the
           document.</p>
-        <p><img border="0" width="359" height="292" src="images/212-lockouts.gif" />
+        <p><img src="images/212-lockouts.gif" />
         </p>
         <h3 id="section-2-2">2.2 The collaborative model</h3>
         <h4 id="section-2-2-1">2.2.1 Streaming Model for Real-Time Synchronization</h4>
@@ -803,7 +803,7 @@
           uninterrupted collaboration. It ensures real-time synchronization across user versions, effectively
           eliminating the
           possibility of interaction with stale states.</p>
-        <p><img border="0" width="302" height="273" src="images/221-streaming-model.gif" />
+        <p><img src="images/221-streaming-model.gif" />
         </p>
         <p>It emphasizes quick, consistent updates, often applied at every keystroke or word completion. While updates
           can occur
@@ -835,7 +835,7 @@
           streamed for awareness and presence is generally considered ephemeral and is not typically logged or stored to
           disk.
         </p>
-        <p><img border="0" width="362" height="233" src="images/222-presence-awareness.gif" />
+        <p><img src="images/222-presence-awareness.gif" />
         </p>
         <h3 id="section-2-3">2.3 Challenges in Code Execution</h3>
         <p>
@@ -875,7 +875,7 @@
         </p>
         <p>
           <br />
-          <img border="0" width="347" height="236" src="images/231-editor-execution.gif" />
+          <img src="images/231-editor-execution.gif" />
         </p>
         <p>
           The original use case for notebooks was specifically to reduce the
@@ -891,7 +891,7 @@
           more organized.
         </p>
         <p>
-          <img border="0" width="337" height="306" src="images/231-notebook-execution.gif" />
+          <img src="images/231-notebook-execution.gif" />
         </p>
         <p>
           Generic code execution engines can be computationally intensive, but they
@@ -927,7 +927,7 @@
           code base or sensitive user data.
         </p>
         <p>
-          <img border="0" width="354" height="273" src="images/232-sandbox.png" />
+          <img src="images/232-sandbox.png" />
         </p>
         <p>
           Isolation of user code can keep an app and its users safe, but it can be
@@ -966,7 +966,7 @@
           user-submission.
         </p>
         <p>
-          <img border="0" width="468" height="224" src="images/233-stateless-execution.png" />
+          <img src="images/233-stateless-execution.png" />
         </p>
         <p>
           In Pennant and other notebooks, code execution is stateful. Each code
@@ -977,7 +977,7 @@
           instance.
         </p>
         <p>
-          <img border="0" width="468" height="224" src="images/233-state-execution.png" />
+          <img src="images/233-state-execution.png" />
         </p>
         <p>
           Why can’t changes in code execution context just be shipped from user to
@@ -1028,8 +1028,7 @@
             to coordinate state updates and awareness for all users.
             <br />
             <br />
-            <img border="0" width="396" height="241" src="images/31-top-level-infrastructure.png"
-              alt="A diagram of a browser" />
+            <img src="images/31-top-level-infrastructure.png" />
           </li>
         </ol>
         <p>
@@ -1072,7 +1071,7 @@
           of our hosted infrastructure. Even the routing logic of the web server can
           be replicated in the client application.
         </p>
-        <img border="0" width="345" height="199" src="images/311-p2p.gif" />
+        <img src="images/311-p2p.gif" />
         <p>
           The two primary disadvantages of the p2p model are divergent execution
           engine states and diminished client side performance. There are security
@@ -1092,10 +1091,12 @@
           us to the more conventional client-server model.
         </p>
         <p>
-          <img border="0" width="403" height="229" src="images/311-client-server.gif" />
+          <img src="images/311-client-server.gif" />
         </p>
-        <p>
-          <img border="0" width="468" height="273" src="images/311-p2p-v-clientserver-chart.png" />
+        <figure style="text-align: center;">
+          <img src="images/311-p2p-v-clientserver-chart.png" />
+          <figcaption>Comparison Table: P2P vs. Client/Server Model</figcaption>
+        </figure>
         </p>
 
         <h4 id="section-3-1-2">3.1.2 A pub/sub model</h4>
@@ -1118,7 +1119,7 @@
           remote user.
         </p>
         <p>
-          <img border="0" width="375" height="300" src="images/312-pubsub-flow.png" />
+          <img src="images/312-pubsub-flow.png" />
         </p>
         <p>
           <strong>However, in our collaboration service, all clients act as both publishers and subscribers to all other
@@ -1229,7 +1230,9 @@
           the data from an application perspective but also houses a substantial
           volume of metadata essential for conflict resolution.
         </p>
-        <img border="0" width="411" height="246" src="images/35-yjs-middle-insertion.png" />
+        <p>
+          <img src="images/35-yjs-middle-insertion.png" />
+        </p>
         </p>
         <p>
           Visualize this with a simple string creation. Let’s say a user writes the
@@ -1239,8 +1242,7 @@
           necessary for conflict resolution.
         </p>
         <p>
-          <br />
-          <img border="0" width="324" height="217" src="images/35-unique-yjs-objects.png" />
+          <img src="images/35-unique-yjs-objects.png" />
         </p>
         <p>
           <strong>
@@ -1289,7 +1291,7 @@
           lower user IDs, executing user 0's insertion first and user 1's second,
           resulting in 'WABXYZ'.
         </p>
-        <img border="0" width="600" height="326" src="images/36-lowlevel-conflict-resolution.png" />
+        <img src="images/36-lowlevel-conflict-resolution.png" />
         <p>
           Why favor lower user IDs? It doesn’t matter. It could prioritize
           higher user IDs instead. The important thing is having a consistent rule and
@@ -1518,7 +1520,7 @@
           combination of technologies allows for changes to be propagated almost instantly, making the collaboration
           feel
           seamless and natural for all users collaborating within the same notebook.
-          <img border="0" width="468" height="169" src="images/391-collaboration-synchronization.png" />
+          <img src="images/391-collaboration-synchronization.png" />
         </p>
         <h4 id="section-3-9-2">
           3.9.2 Persistence
@@ -1538,7 +1540,7 @@
           into its own version of the document, following the rules defined by our CRDT model (Yjs in our case).
         </p>
         <p style="text-align: center;">
-          <img border="0" width="144" height="418" src="images/392-database-persistence.png" />
+          <img border="0" width="180" height="518" src="images/392-database-persistence.png" />
         </p>
         <p>
           Our server discards the in-memory document once the last client disconnects. To ensure data persistence beyond
@@ -1702,7 +1704,7 @@
           appropriate server, reinforcing the success of our approach.
         </p>
         <p>
-          <img border="0" width="468" height="311" src="images/44-scaling-collaboration.png" />
+          <img src="images/44-scaling-collaboration.png" />
         </p>
         <!-- Section 5: Execution engine -->
         <h2 id="section-5">5. Execution Engine</h2>
@@ -1758,7 +1760,7 @@
           users.
         </p>
         <p>
-          <img border="0" width="468" height="187" src="images/52-engine-queues.png" />
+          <img src="images/52-engine-queues.png" />
         </p>
 
         <h4 id="section-5-1-2">5.1.2 Returning the results to users</h4>
@@ -2210,7 +2212,7 @@
           </strong>
         </p>
         <p>
-          <img border="0" width="307" height="208" src="images/9-webserver.gif" />
+          <img src="images/9-webserver.gif" />
         </p>
         <p>
           <strong>
@@ -2221,7 +2223,7 @@
           server.
         </p>
         <p>
-          <img border="0" width="378" height="254" src="images/9-collaboration-part1.gif" />
+          <img src="images/9-collaboration-part1.gif" />
         </p>
         <p>
           <strong>
@@ -2239,7 +2241,7 @@
           the database and is removed from memory on the server.
         </p>
         <p>
-          <img border="0" width="350" height="235" src="images/9-collaboration-part2.gif" />
+          <img src="images/9-collaboration-part2.gif" />
         </p>
         <p>
           <strong>
@@ -2255,7 +2257,7 @@
           </strong>
         </p>
         <p>
-          <img border="0" width="351" height="228" src="images/9-execution.gif" />
+          <img src="images/9-execution.gif" />
         </p>
         <p>
           <strong>
@@ -2263,7 +2265,7 @@
           </strong>
         </p>
         <p>
-          <img border="0" width="370" height="245" src="images/9-full-diagram.gif" />
+          <img src="images/9-full-diagram.gif" />
         </p>
         <!-- Section 10: Conclusion and next steps -->
         <h2 id="section-10">10. Next Steps <strong></strong></h2>
@@ -2348,7 +2350,8 @@
   <div id="presentation" class="main-section">
     <div class="bg-gray">
       <h2>Presentation</h2>
-      <iframe src="" title="YouTube video player" frameborder="0"
+      <iframe src="https://www.youtube-nocookie.com/embed/whU3FOrJB7Y?rel=0&controls=0&showinfo=0"
+        title="YouTube video player" frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen></iframe>
     </div>
@@ -2365,7 +2368,6 @@
           </p>
         </div>
         <ul class="people">
-
           <li class="profile">
             <img class="mx-auto h-40 w-40 rounded-full xl:w-56 xl:h-56 lazy" data-src="images/team/jl.jpeg" alt="" />
             <div>
@@ -2472,6 +2474,9 @@
         </ul>
       </div>
     </div>
+  </div>
+  </div>
+  </div>
   </div>
 
   <script src="javascripts/script.js"></script>
