@@ -692,16 +692,15 @@
           data scientists and researchers utilize computational notebooks as a primary tool for exploring datasets and
           sharing
           findings.</p>
-        <p>Computational notebooks are also viable for learning. Students from diverse academic fields can learn how to
-          code
-          with Jupyter Notebook with no prior experience. Instructors can create interactive lecture notes while
-          students can
-          experiment with code snippets on the same notebook <a
-            href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7643937/">CITATION</a>. Computational notebooks also
-          circumvent
-          technical setup requirements that can be difficult for beginners, such as setting up development environments
-          <a href="https://www.tandfonline.com/doi/full/10.1080/10691898.2020.1860726">CITATION</a>.
-        </p>
+          <p>
+            Computational notebooks are also viable for learning. Students from diverse academic fields can learn how to
+            code with Jupyter Notebook with no prior experience. Instructors can create interactive lecture notes while
+            students can experiment with code snippets on the same notebook <a
+            href="#section-11">[1]</a>. Computational notebooks also circumvent
+            technical setup requirements that can be difficult for beginners, such as setting up development environments
+            <a href="#section-11">[2]</a>.
+          </p>
+          
         <h3 id="section-1-2">1.2 How Pennant is Used</h3>
         <p>Pennant brings the educational benefits of using computational notebooks to web development students. Unlike
           note-taking tools like Notion and Obsidian, a computational notebook allows users to read tutorials, take
@@ -1882,7 +1881,7 @@
           access,
           attackers can exploit Linux system vulnerabilities to escalate their permissions and gradually gain control of
           the
-          host system (<a href="https://www.redhat.com/en/blog/containers-vulnerability-risk-assessment">citation</a>).
+          host system <a href="#section-11">[3]</a>.
         </p>
         <p>
           <strong><em>One option for addressing these vulnerabilities would be gVisor, which provides a runtime for
@@ -1893,8 +1892,8 @@
           intercepts
           system call exploits, preventing container escapes. We had originally read that gVisor’s runsc runtime runs
           with a 15
-          mb memory footprint (<a
-            href="chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://www.usenix.org/system/files/hotcloud19-paper-young.pdf">citation</a>).
+          mb memory footprint <a
+            href="#section-11">[4]</a>.
           <strong><em>However, our tests showed gVisor doubled the memory consumption of our
               containers</em></strong>.
         </p>
@@ -1961,8 +1960,8 @@
             Configuring containers to run under unprivileged non-root users
           </li>
           <li>
-            Dropping all Linux kernel capabilities to prevent common privilege escalation attacks (<a
-              href="https://unit42.paloaltonetworks.com/cve-2022-0492-cgroups/">citation</a>)
+            Dropping all Linux kernel capabilities to prevent common privilege escalation attacks <a
+              href="#section-11">[5]</a>
           </li>
           <li>
             Setting the entire file system of the container as read-only, preventing attackers from injecting hostile
@@ -2330,7 +2329,7 @@
           like Cloudflare currently use V8 isolates to securely execute code on their
           servers.
         </p>
-        <h3 id="section-10-2">10.2 Next steps for engine</h3>
+        <h3 id="section-10-2">10.2 Additional code execution features</h3>
         <p>
           <strong>
             <em>In addition to working on scaling issues, we would like to integrate
@@ -2343,6 +2342,36 @@
           last section, iframe-based sandboxing can isolate browser environments from
           dangerous front-end code.
         </p>
+        <h2 id="section-11">References <strong></strong></h2>
+        
+        <ol>
+          <li>
+            <p>
+              Davies, A., Hooley, F., Causey-Freeman, P., Eleftheriou, I., & Moulton, G. (2020). Using interactive digital notebooks for bioscience and informatics education. <i>PLoS Computational Biology</i>, 16(11), e1008326. <a href="#">doi: 10.1371/journal.pcbi.1008326</a>.
+            </p>
+          </li>
+          <li>
+            <p>
+              Kim, B., & Henke, G. (2021). Easy-to-Use Cloud Computing for Teaching Data Science. <i>Journal of Statistics and Data Science Education</i>, 29(Supplement 1), S103-S111. <a href="#">doi: 10.1080/10691898.2020.1869022</a>.
+            </p>
+          </li>
+          <li>
+            <p>
+              Roguski, P., & Baker, D. (2022). Containers vulnerability risk assessment. <i>Red Hat Blog</i>. Retrieved from <a href="https://www.redhat.com/en/blog/containers-vulnerability-risk-assessment">https://www.redhat.com/en/blog/containers-vulnerability-risk-assessment</a>.
+            </p>
+          </li>
+          <li>
+            <p>
+              Young, E. G., Zhu, P., Caraza-Harter, T., Arpaci-Dusseau, A. C., & Arpaci-Dusseau, R. H. (Year). The True Cost of Containing: A gVisor Case Study. In <i>Proceedings of the 11th USENIX Conference on Hot Topics in Cloud Computing (HotCloud'19)</i>. University of Wisconsin, Madison.
+            </p>
+          </li>
+          <li>
+            <p>
+              Avrahami, Y. (2022, Mar. 3). New Linux Vulnerability CVE-2022-0492 Affecting Cgroups: Can Containers Escape? <i>Unit42</i>. Retrieved from <a href="https://unit42.paloaltonetworks.com/cve-2022-0492-cgroups/">https://unit42.paloaltonetworks.com/cve-2022-0492-cgroups/</a>.
+            </p>
+          </li>
+        </ol>
+        
       </div>
     </div>
   </div>
