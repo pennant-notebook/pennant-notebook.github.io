@@ -1909,58 +1909,28 @@
           <strong><em>However, our tests showed gVisor doubled the memory consumption of our
               containers</em></strong>.
         </p>
-        <table style="border: 1px solid black; border-collapse: collapse;" cellspacing="2" cellpadding="3">
+        <table>
+          <thead>
+            <tr>
+              <th></th>
+              <th>RAM per container</th>
+              <th>Max # of concurrent workers per host</th>
+            </tr>
+          </thead>
           <tbody>
             <tr>
-              <td style="border: 1px solid black;" valign="top">
-              </td>
-              <td style="border: 1px solid black;" valign="top" align="center">
-                <p>
-                  RAM per container
-                </p>
-              </td>
-              <td style="border: 1px solid black;" valign="top" align="center">
-                <p>
-                  Max # of concurrent workers per host
-                </p>
-              </td>
+              <td>runC</td>
+              <td>25 MB</td>
+              <td>40</td>
             </tr>
             <tr>
-              <td style="border: 1px solid black;" valign="top" align="right">
-                <p>
-                  runC
-                </p>
-              </td>
-              <td style="border: 1px solid black;" valign="top" align="center">
-                <p>
-                  25 mb
-                </p>
-              </td>
-              <td style="border: 1px solid black;" valign="top" align="center">
-                <p>
-                  40
-                </p>
-              </td>
-            </tr>
-            <tr>
-              <td style="border: 1px solid black;" valign="top" align="right">
-                <p>
-                  runsc
-                </p>
-              </td>
-              <td style="border: 1px solid black;" valign="top" align="center">
-                <p>
-                  60 mb
-                </p>
-              </td>
-              <td style="border: 1px solid black;" valign="top" align="center">
-                <p>
-                  18
-                </p>
-              </td>
+              <td>runsc</td>
+              <td>60 MB</td>
+              <td>18</td>
             </tr>
           </tbody>
         </table>
+        
 
         <p>
           <strong><em>Instead, we strengthened our security without introducing more resource demands by modifying our
